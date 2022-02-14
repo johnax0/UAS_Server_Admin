@@ -20,14 +20,15 @@ if ($conn->connect_error) {
 
 $sql = "SELECT id, nama, alamat, jabatan FROM users";
 $result = $conn->query($sql);
-
+$temp = 0;
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["id"]. " - Nama: " . $row["nama"]. " - Alamat: " . $row["alamat"]. " - Jabatan: " . $row["jabatan"]. "<br>";
+    $temp++;
   }
 } else {
   echo "0 results";
 }
+echo $temp;
 $conn->close();
 ?>
