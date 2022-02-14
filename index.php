@@ -24,6 +24,7 @@ if ($result->num_rows > 0) {
 } else {
   echo "0 results";
 }
-echo "Jumlah Karyawan : " $temp;
+echo "Jumlah Karyawan : ";
+ehoc $temp;
 $conn->close();
 ?>
