@@ -4,11 +4,6 @@ $username = "root";
 $password = "kali";
 $dbname = "trucorp";
 
-
-
-
-
-
 //CREDIT : W3 School.
 
 // Create connection
